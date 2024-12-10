@@ -9,11 +9,11 @@ const Profile = () => {
 
     const handleLogout = () => {
         localStorage.removeItem('token');
-        navigate('/login');
+        navigate('/');
     };
 
     return (
-        <div className="min-h-screen">
+        <div className="min-h-screen bg-custom-gradient">
             <header className="bg-blue-600 text-white py-4 px-8 flex justify-between items-center">
                 <Link to="/" className="text-2xl font-bold">
                     <FaRegPaperPlane />Planeo
@@ -25,7 +25,6 @@ const Profile = () => {
                     Logout
                 </button>
             </header>
-                        
             <main className="container mx-auto mt-6 px-4">
                 <h2 className="text-3xl font-bold mb-6">Equipos</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
