@@ -1,15 +1,15 @@
 import React from "react";
-import { FaRegPaperPlane } from "react-icons/fa";
+import { FaPaperPlane } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Home: React.FC = () => {
     const isLoggedIn = !!localStorage.getItem('token');
 
     return (
-        <div className="min-h-screen ">
+        <div className="min-h-screen">
             <header className="bg-white-600 text-black py-4 px-8 flex justify-between items-center">
                     <h1 className="text-2xl font-bold">
-                        <FaRegPaperPlane />Planeo
+                        <FaPaperPlane />Planeo
                     </h1>
                     <nav>
                         {isLoggedIn ? (
@@ -20,9 +20,6 @@ const Home: React.FC = () => {
                             <>
                                 <Link to="/login"  className="border mr-2 px-6 py-3 rounded-lg bg-blue-900 hover:bg-white m-2 hover:text-blue-900 hover:border-blue-900 text-white font-bold">
                                     Login
-                                </Link>
-                                <Link to="/register"  className="border mr-2 px-6 py-3 rounded-lg bg-blue-900 hover:bg-white m-2 hover:text-blue-900 hover:border-blue-900 text-white font-bold">
-                                    Register
                                 </Link>
                             </>
                         )}
