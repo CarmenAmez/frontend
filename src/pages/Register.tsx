@@ -69,7 +69,7 @@ const Register: React.FC = () => {
                     peer-focus:top-2 peer-focus:text-xs peer-focus:text-blue-600 
                     ${name && "top-2 text-xs text-blue-600"}`}
                             >
-                                Nombre
+                                Nombre de usuario
                             </label>
                         </div>
 
